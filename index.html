@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abastece</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <img src="./images/Abastece.png" alt="Logo Abastece">
+        </header>
+        <section class="content">
+            <h1>Novo Abastecimento (<span></span>)</h1>
+
+            <form>
+                <div class="form-field">
+                    <label for="inputData">Data</label>
+                    <input type="text" id="inputData" name="data" placeholder="Data">
+                    <button type="button"><img src="./images/calendar.png" alt="Calendário" /></button>
+                </div>
+                <div class="form-field">
+                    <label for="inputKM">KM</label>
+                    <input type="text" id="inputKM" name="km" placeholder="KM">
+                </div>
+                <div class="form-field">
+                    <label for="inputLitros">Litros</label>
+                    <input type="text" id="inputLitros" name="litros" placeholder="Litros">
+                </div>
+                <div class="form-field">
+                    <label for="inputValor">Valor Total</label>
+                    <input type="text" id="inputValor" name="valor" placeholder="Valor">
+                </div>
+
+                <div class="form-radios">
+                    <div class="form-radios-item">
+                        <input type="radio" id="radioGasolina" name="combustivel" value="Gasolina">
+                        <label for="radioGasolina">Gasolina</label>
+                    </div>
+
+                    <div class="form-radios-item">
+                        <input type="radio" id="radioEtanol" name="combustivel" value="Etanol">
+                        <label for="radioEtanol">Etanol</label>
+                    </div>
+                    <div class="form-radios-item">
+                        <input type="radio" id="radioDiesel" name="combustivel" value="Diesel">
+                        <label for="radioDiesel">Diesel</label>
+                    </div>
+                </div>
+
+                <div class="form-checks">
+                    <div class="form-checks-item">
+                        <input type="checkbox" id="checkCompletou" name="completou">
+                        <label for="checkCompletou">Completou?</label>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit">Salvar</button>
+                </div>
+            </form>
+        </section>
+
+        <footer>
+            <ul class="menu">
+                <li class="active"><a href="/index.html">Abastecer</a></li>
+                <li><a href="/historico.html">Histórico</a></li>
+                <li><a href="/medias.html">Médias</a></li>
+            </ul>
+        </footer>
+    </main>
+
+    <script type="module">
+        import main from './js/main.js'
+
+        main.init()
+    </script>
+
+</body>
+
+</html>
